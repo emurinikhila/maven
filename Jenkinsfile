@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sshpass -p "nikhila" scp target/DemoATR.war root@172.17.0.3:/var/lib/tomcat9/webapps'
+                sh 'sshpass -p "nikhila" scp target/DemoATR.war root@172.17.0.4:/var/lib/tomcat9/webapps'
             }
         }
     }
